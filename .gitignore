@@ -1,0 +1,46 @@
+# Build directories
+build/
+cmake-build-*/
+out/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.suo
+*.user
+
+# Compiled files
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Qt
+moc_*
+ui_*
+qrc_*
+Makefile
+*.pro.user
+
+# Android
+*.apk
+*.aab
+*.ap_
+*.dex
+.gradle/
+**/build/
+**/.cxx/
+local.properties
+*.log
+
+# Keys 
+*.key
+
+# OS files
+.DS_Store
+Thumbs.db
+
+*.xcf

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark theme colors matching Qt dark palette -->
+    <color name="dark_background">#FF1E1E1E</color>
+    <color name="dark_surface">#FF2D2D2D</color>
+    <color name="dark_surface_light">#FF3D3D3D</color>
+    <color name="dark_primary">#FF4A9EFF</color>
+    <color name="dark_primary_dark">#FF2D7DD2</color>
+    <color name="dark_accent">#FF5DADE2</color>
+    <color name="text_primary">#FFFFFFFF</color>
+    <color name="text_secondary">#FFB0B0B0</color>
+    <color name="text_hint">#FF808080</color>
+    <color name="button_background">#FF4A9EFF</color>
+    <color name="button_text">#FFFFFFFF</color>
+    <color name="input_background">#FF3D3D3D</color>
+    <color name="input_stroke">#FF5A5A5A</color>
+    
+    <!-- Keep these for compatibility -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

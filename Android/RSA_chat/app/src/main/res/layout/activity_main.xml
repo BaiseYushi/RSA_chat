@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/dark_background">
+
+    <!-- Header with title and help button -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RSA Chat"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary" />
+
+        <Button
+            android:id="@+id/help_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="?"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/dark_surface_light"
+            android:textColor="@color/text_primary"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:padding="0dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp" />
+
+        <Button
+            android:id="@+id/preview_toggle_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:text="Preview: OFF"
+            android:textSize="12sp"
+            android:backgroundTint="@color/dark_surface_light"
+            android:textColor="@color/text_primary"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp" />
+    </LinearLayout>
+
+    <!-- Server IP input -->
+    <EditText
+        android:id="@+id/server_ip"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:padding="12dp"
+        android:hint="Server IP (e.g. 192.168.1.10)"
+        android:inputType="text"
+        android:background="@color/input_background"
+        android:textColor="@color/text_primary"
+        android:textColorHint="@color/text_hint" />
+
+    <!-- Server Port input -->
+    <EditText
+        android:id="@+id/server_port"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:padding="12dp"
+        android:hint="Port (default: 12345)"
+        android:inputType="number"
+        android:layout_marginTop="8dp"
+        android:background="@color/input_background"
+        android:textColor="@color/text_primary"
+        android:textColorHint="@color/text_hint" />
+
+    <!-- Connect button -->
+    <Button
+        android:id="@+id/connect_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Connect"
+        android:backgroundTint="@color/dark_primary"
+        android:textColor="@color/button_text" />
+
+    <!-- Chat log -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:background="@color/dark_surface">
+
+        <TextView
+            android:id="@+id/chat_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="Not connected."
+            android:textSize="14sp"
+            android:textColor="@color/text_primary"
+            android:fontFamily="monospace" />
+    </ScrollView>
+
+    <!-- Message input + send -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:id="@+id/message_input"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:hint="Type message"
+            android:inputType="text"
+            android:background="@color/input_background"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_hint" />
+
+        <Button
+            android:id="@+id/send_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Send"
+            android:backgroundTint="@color/dark_primary"
+            android:textColor="@color/button_text" />
+    </LinearLayout>
+
+</LinearLayout>
