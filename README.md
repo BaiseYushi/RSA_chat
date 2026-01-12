@@ -1,5 +1,8 @@
 # RSA Chat
 
+## Demo Video
+**[Watch Demo on YouTube](https://youtu.be/TbpJlVsejvA)**
+
 An educational peer-to-peer chat application demonstrating RSA encryption principles.  
 Available for Windows (Qt/C++) and Android (Java/NDK).
 
